@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum Vitae and professional skills of Meenakshi Sharma, Experimental Physicist specializing in superconductivity and quantum materials.">
+  <title>Curriculum Vitae | Meenakshi Sharma</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* CV Page specific styles */
+    .cv-hero {
+      text-align: center;
+      padding: 10rem 0 4rem 0;
+      background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .cv-hero h1 {
+      margin-bottom: 1rem;
+    }
+    .cv-action-container {
+      margin: -2rem auto 3rem auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+    }
+    .cv-section-block {
+      margin-bottom: 4rem;
+    }
+    .education-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .education-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px var(--shadow-color);
+    }
+    .education-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+    .education-degree {
+      color: var(--accent-primary);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .education-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .references-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .reference-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px var(--shadow-color);
+    }
+    .reference-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.3rem;
+    }
+    .reference-title {
+      color: var(--accent-primary);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .reference-contact {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+    .skills-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1.5rem;
+    }
+    .skill-tag {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      cursor: default;
+    }
+    .skill-tag:hover {
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px var(--glow-color);
+    }
+    @media (max-width: 768px) {
+      .references-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html#home" class="logo">
+        Meenakshi<span>Sharma</span>
+      </a>
+      
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CV Hero -->
+  <section class="cv-hero">
+    <div class="container">
+      <h1>Curriculum Vitae</h1>
+      <p>A detailed view of my academic qualifications, core technical skills, and professional references.</p>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: 4rem;">
+    <!-- Academic & Professional Experience -->
+    <div class="cv-section-block" style="margin-bottom: 5rem;">
+      <h2>Academic & Professional Experience</h2>
+      <div class="we-section" style="margin-top: 2rem;">
+        <!-- Current Role Hero -->
+        <div class="we-current">
+          <div class="we-current-logo">
+            <img src="assets/img/mpi.png" alt="Max Planck Institute CPFS logo">
+          </div>
+          <div class="we-current-body">
+            <div class="we-current-badge">● Current</div>
+            <p class="we-current-title">Characterizing Superconducting Resonators @ Max Planck Institute</p>
+            <p class="we-current-role">Postdoctoral Researcher &nbsp;·&nbsp; Apr 2024 – Present</p>
+            <p class="we-current-desc">Working in the Quantum Information for Quantum Materials group with Dr. Uri Vool. Conducting microwave characterization of superconducting resonators, assessing dissipation mechanisms, and optimizing high-kinetic-inductance NbN films for next-generation quantum technologies.</p>
+          </div>
+        </div>
+
+        <!-- Past Experience Label -->
+        <div class="we-past-label">Past Experience</div>
+
+        <!-- Logo Grid -->
+        <div class="we-logo-grid" id="we-logo-grid">
+          <!-- INRiM -->
+          <button class="we-logo-btn" id="we-btn-0" aria-label="INRiM Torino" onclick="weShowDetail(0, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/inrim.svg" alt="INRiM logo">
+            </div>
+            <span class="we-logo-name">INRiM Torino</span>
+            <span class="we-logo-year">2023</span>
+          </button>
+
+          <!-- IISER -->
+          <button class="we-logo-btn" id="we-btn-1" aria-label="IISER Tirupati" onclick="weShowDetail(1, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/iiser.svg" alt="IISER Tirupati logo">
+            </div>
+            <span class="we-logo-name">IISER Tirupati</span>
+            <span class="we-logo-year">2017 – 2019</span>
+          </button>
+
+          <!-- ISRO -->
+          <button class="we-logo-btn" id="we-btn-2" aria-label="ISRO Ahmedabad" onclick="weShowDetail(2, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/isro.svg" alt="ISRO logo">
+            </div>
+            <span class="we-logo-name">ISRO</span>
+            <span class="we-logo-year">2016 – 2017</span>
+          </button>
+
+          <!-- NPL -->
+          <button class="we-logo-btn" id="we-btn-3" aria-label="NPL New Delhi" onclick="weShowDetail(3, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/npl.svg" alt="NPL India logo">
+            </div>
+            <span class="we-logo-name">NPL New Delhi</span>
+            <span class="we-logo-year">2015</span>
+          </button>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="we-detail-panel" id="we-detail-panel">
+          <button class="we-detail-close" onclick="weCloseDetail()" aria-label="Close">✕</button>
+          <div class="we-detail-header">
+            <div class="we-detail-logo"><img id="we-d-logo" src="" alt=""></div>
+            <div>
+              <p class="we-detail-company" id="we-d-company"></p>
+              <p class="we-detail-meta" id="we-d-meta"></p>
+            </div>
+          </div>
+          <p class="we-detail-desc" id="we-d-desc"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Education Section -->
+    <div class="cv-section-block">
+      <h2>Education</h2>
+      <div class="education-grid" style="margin-top: 2rem;">
+        <!-- Ph.D. -->
+        <div class="education-card" style="display: flex; gap: 20px; align-items: flex-start;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: #ffffff; border: 1.5px solid var(--border-color); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 10px var(--shadow-color);">
+            <img src="assets/img/unicam.svg" alt="University of Camerino logo" style="width: 75%; height: 75%; object-fit: contain; border-radius: 50%;">
+          </div>
+          <div style="flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+              <h3 style="margin-top: 0; margin-bottom: 0.3rem;">University of Camerino</h3>
+              <span style="font-weight: 700; color: var(--accent-primary);">2020 – 2024</span>
+            </div>
+            <p class="education-degree">Ph.D. in Physics</p>
+            <p class="education-desc">Topic: <em>Novel Phenomena With Berezinskii-Kosterlitz-Thouless Transition, Topological Fluctuations, and Phase Slips in Superconducting NbN Nanofilms</em>.<br>Advisors: Prof. Andrea Perali, Prof. Nicola Pinto.</p>
+          </div>
+        </div>
+
+        <!-- Masters -->
+        <div class="education-card" style="display: flex; gap: 20px; align-items: flex-start;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: #ffffff; border: 1.5px solid var(--border-color); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 10px var(--shadow-color);">
+            <img src="assets/img/amity.svg" alt="Amity University logo" style="width: 75%; height: 75%; object-fit: contain; border-radius: 50%;">
+          </div>
+          <div style="flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+              <h3 style="margin-top: 0; margin-bottom: 0.3rem;">Amity University, Noida, India</h3>
+              <span style="font-weight: 700; color: var(--accent-primary);">2014 – 2016</span>
+            </div>
+            <p class="education-degree">Masters in Applied Physics</p>
+            <p class="education-desc">Thesis: <em>Optimization and Fabrication of Surface Acoustic Wave Wire Grid Polarizers with 70 nm Feature Sizes for Enhanced Performance in Space-Borne Satellite Payloads</em> (in collaboration with ISRO Ahmedabad).<br>Advisor: Dr. Kamlesh C. Pargein.</p>
+          </div>
+        </div>
+
+        <!-- B.Sc. -->
+        <div class="education-card" style="display: flex; gap: 20px; align-items: flex-start;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: #ffffff; border: 1.5px solid var(--border-color); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 10px var(--shadow-color);">
+            <img src="assets/img/du.svg" alt="University of Delhi logo" style="width: 75%; height: 75%; object-fit: contain; border-radius: 50%;">
+          </div>
+          <div style="flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+              <h3 style="margin-top: 0; margin-bottom: 0.3rem;">University of Delhi, India</h3>
+              <span style="font-weight: 700; color: var(--accent-primary);">2010 – 2014</span>
+            </div>
+            <p class="education-degree">B.Sc. in Physical Sciences (Specialization: Electronics)</p>
+            <p class="education-desc">Graduated with a solid foundation in experimental electronics, electromagnetic theory, and basic computing tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills Section -->
+    <div class="cv-section-block">
+      <h2>Technical Core Competencies</h2>
+      <div class="skills-grid" style="margin-top: 2rem;">
+        <!-- Physics & Measurements -->
+        <div class="skills-card">
+          <h3>Physics & Measurements</h3>
+          <div class="skills-tags">
+            <span class="skill-tag">Cryogenic Measurements (mK)</span>
+            <span class="skill-tag">Microwave Resonator Characterization</span>
+            <span class="skill-tag">Low-Temp Magnetotransport</span>
+            <span class="skill-tag">Impedance Spectroscopy</span>
+            <span class="skill-tag">Point-Contact Spectroscopy</span>
+          </div>
+        </div>
+
+        <!-- Nanofabrication -->
+        <div class="skills-card">
+          <h3>Nanofabrication & Deposition</h3>
+          <div class="skills-tags">
+            <span class="skill-tag">E-Beam & Laser Lithography</span>
+            <span class="skill-tag">Thin-Film Deposition (Sputtering, Evaporation)</span>
+            <span class="skill-tag">Dry & Wet Etching</span>
+            <span class="skill-tag">Lift-Off Processes</span>
+            <span class="skill-tag">Materials Characterization (SEM, XRD, Raman)</span>
+          </div>
+        </div>
+
+        <!-- Programming & Scientific Tools -->
+        <div class="skills-card">
+          <h3>Computation & Instruments</h3>
+          <div class="skills-tags">
+            <span class="skill-tag">Python (Scientific Libraries)</span>
+            <span class="skill-tag">MATLAB & LabView Automation</span>
+            <span class="skill-tag">Origin & Data Modeling</span>
+            <span class="skill-tag">RF Design & HFSS Simulation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- References Section -->
+    <div class="cv-section-block" style="margin-bottom: 6rem;">
+      <h2>Professional References</h2>
+      <div class="references-grid" style="margin-top: 2rem;">
+        <!-- Reference 1 -->
+        <div class="reference-card">
+          <h3>Prof. Andrea Perali</h3>
+          <p class="reference-title">Professor, School of Pharmacy</p>
+          <p class="reference-contact">University of Camerino, Italy<br>Email: <a href="mailto:andrea.perali@unicam.it">andrea.perali@unicam.it</a></p>
+        </div>
+
+        <!-- Reference 2 -->
+        <div class="reference-card">
+          <h3>Dr. Uri Vool</h3>
+          <p class="reference-title">Group Leader, QIQM Group</p>
+          <p class="reference-contact">Max Planck Institute CPFS, Dresden, Germany<br>Email: <a href="mailto:uri.vool@cpfs.mpg.de">uri.vool@cpfs.mpg.de</a></p>
+        </div>
+
+        <!-- Reference 3 -->
+        <div class="reference-card">
+          <h3>Prof. Nicola Pinto</h3>
+          <p class="reference-title">Professor, Department of Physics</p>
+          <p class="reference-contact">University of Camerino, Italy<br>Email: <a href="mailto:nicola.pinto@unicam.it">nicola.pinto@unicam.it</a></p>
+        </div>
+
+        <!-- Reference 4 -->
+        <div class="reference-card">
+          <h3>Dr. S. P. Singh</h3>
+          <p class="reference-title">Head Scientist</p>
+          <p class="reference-contact">National Physical Laboratory (NPL), New Delhi, India<br>Email: <a href="mailto:singhsp@nplindia.org">singhsp@nplindia.org</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Meenakshi Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

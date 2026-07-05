@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research publications, preprints, and manuscripts of Meenakshi Sharma. Specializing in superconductor nanostructures, BKT transition, and cryogenic measurements.">
+  <title>Publications | Meenakshi Sharma</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html#home" class="logo">
+        Meenakshi<span>Sharma</span>
+      </a>
+      
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Publications Hero -->
+  <section class="publications-hero">
+    <div class="container">
+      <h1>Research Publications</h1>
+      <p>A comprehensive collection of my peer-reviewed journal publications and active preprints.</p>
+    </div>
+  </section>
+
+  <!-- Search & Filter Controls -->
+  <div class="search-filter-wrapper">
+    <div class="search-box-container">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+      <input type="text" id="pub-search" placeholder="Search publications by title, co-author, or journal...">
+    </div>
+    
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="published">Published</button>
+      <button class="filter-tab" data-filter="preprint">Preprints / Submitted</button>
+    </div>
+  </div>
+
+  <!-- Publications Directory -->
+  <div class="container">
+    <div class="pub-list" id="pub-list">
+      
+      <!-- Pub 1: BKT Submitted -->
+      <div class="pub-card" data-category="preprint">
+        <span class="pub-badge">Submitted / Preprint</span>
+        <h3 class="pub-title">Berezinskii-Kosterlitz-Thouless to BCS-like superconducting transition crossover driven by weak magnetic fields in ultra-thin NbN films</h3>
+        <p class="pub-authors"><strong>M. Sharma</strong>, S. Caprara, A. Perali, S.P. Singh, S. Singh, M. Fretto, N. De Leo, N. Pinto</p>
+        <div class="pub-meta">
+          <span class="pub-journal">arXiv preprint arXiv:2403.11685</span>
+          <span>(Submitted 2025)</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2403.11685" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            arXiv Page
+          </a>
+          <a href="https://arxiv.org/pdf/2403.11685.pdf" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Download PDF
+          </a>
+          <button class="pub-link" onclick="copyCitation('@article{sharma2025berezinskii,\n  title={Berezinskii-Kosterlitz-Thouless to BCS-like superconducting transition crossover driven by weak magnetic fields in ultra-thin NbN films},\n  author={Sharma, Meenakshi and Caprara, S. and Perali, A. and Singh, S.P. and Singh, S. and Fretto, M. and De Leo, N. and Pinto, N.},\n  journal={arXiv preprint arXiv:2403.11685},\n  year={2025}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+      <!-- Pub 2: Superconducting coils Published -->
+      <div class="pub-card" data-category="published">
+        <span class="pub-badge">Published Journal Article</span>
+        <h3 class="pub-title">Design and manufacturing of superconducting coils for cryogenic (inertial) sensing and actuation</h3>
+        <p class="pub-authors">V.J. Ellenbroek, <strong>M. Sharma</strong>, S.P. Singh, M. Zeoli, A. Gatti, C. Collette, J. Harms, et al.</p>
+        <div class="pub-meta">
+          <span class="pub-journal">IOP Journal (Science and Technology of Materials)</span>
+          <span>(Published 2025)</span>
+        </div>
+        <div class="pub-links">
+          <button class="pub-link" onclick="copyCitation('@article{ellenbroek2025design,\n  title={Design and manufacturing of superconducting coils for cryogenic (inertial) sensing and actuation},\n  author={Ellenbroek, V.J. and Sharma, M. and Singh, S.P. and Zeoli, M. and Gatti, A. and Collette, C. and Harms, J. and others},\n  journal={IOP Journal},\n  year={2025}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- Pub 5: Charge dynamics K3-p-terphenyl Published -->
+      <div class="pub-card" data-category="published">
+        <span class="pub-badge">Published Journal Article</span>
+        <h3 class="pub-title">Infrared ellipsometry study of the charge dynamics in K<sub>3</sub> p-terphenyl</h3>
+        <p class="pub-authors">Q. He, P. Marsik, F. Le Mardelé, B. Xu, <strong>M. Sharma</strong>, N. Pinto, A. Perali, C. Di Nicola, C. Pettinari, D. Baeriswyl, C. Bernhard</p>
+        <div class="pub-meta">
+          <span class="pub-journal">Physical Review B (Phys. Rev. B) 107, 094520</span>
+          <span>(Published 2023)</span>
+          <span>DOI: 10.1103/PhysRevB.107.094520</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1103/PhysRevB.107.094520" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            Publisher DOI Link
+          </a>
+          <button class="pub-link" onclick="copyCitation('@article{he2023infrared,\n  title={Infrared ellipsometry study of the charge dynamics in K3 p-terphenyl},\n  author={He, Q and Marsik, P and Le Mardel{\\text{e}}, F and Xu, B and Sharma, M and Pinto, N and Perali, A and Di Nicola, C and Pettinari, C and Baeriswyl, D and others},\n  journal={Physical Review B},\n  volume={107},\n  number={9},\n  pages={094520},\n  year={2023},\n  publisher={APS}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+      <!-- Pub 6: Lunar Antenna Published -->
+      <div class="pub-card" data-category="published">
+        <span class="pub-badge">Published Article / Report</span>
+        <h3 class="pub-title">The payload of the lunar gravitational-wave antenna</h3>
+        <p class="pub-authors">J. van Heijningen, M. ter Brake, O. Gerberding, S.C. Subrahmanya, J. Harms, X. Bian, A. Gatti, M. Zeoli, A. Bertolini, C. Collette, A. Perali, N. Pinto, <strong>M. Sharma</strong>, F. Tavernier, J. Rezvani</p>
+        <div class="pub-meta">
+          <span class="pub-journal">arXiv preprint arXiv:2301.13685</span>
+          <span>(Published 2023)</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2301.13685" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            arXiv Page
+          </a>
+          <button class="pub-link" onclick="copyCitation('@article{van2023payload,\n  title={The payload of the lunar gravitational-wave antenna},\n  author={van Heijningen, J and ter Brake, M and Gerberding, O and Subrahmanya, SC and Harms, J and Bian, X and Gatti, A and Zeoli, M and Bertolini, A and Collette, C and others},\n  journal={arXiv preprint arXiv:2301.13685},\n  year={2023}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+      <!-- Pub 7: Complex phase-fluctuation NbN nanofilms Published -->
+      <div class="pub-card" data-category="published">
+        <span class="pub-badge">Published Journal Article</span>
+        <h3 class="pub-title">Complex phase-fluctuation effects correlated with granularity in superconducting NbN nanofilms</h3>
+        <p class="pub-authors"><strong>M. Sharma</strong>, M. Singh, R.K. Rakshit, S.P. Singh, M. Fretto, N. De Leo, A. Perali, N. Pinto</p>
+        <div class="pub-meta">
+          <span class="pub-journal">Nanomaterials 12, 4109</span>
+          <span>(Published 2022)</span>
+          <span>DOI: 10.3390/nano12224109</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.3390/nano12224109" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            Publisher DOI Link
+          </a>
+          <button class="pub-link" onclick="copyCitation('@article{sharma2022complex,\n  title={Complex phase-fluctuation effects correlated with granularity in superconducting NbN nanofilms},\n  author={Sharma, Meenakshi and Singh, M and Rakshit, RK and Singh, SP and Fretto, M and De Leo, N and Perali, A and Pinto, N},\n  journal={Nanomaterials},\n  volume={12},\n  number={22},\n  pages={4109},\n  year={2022},\n  publisher={MDPI}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+      <!-- Pub 8: Drop impact Soft Matter Published -->
+      <div class="pub-card" data-category="published">
+        <span class="pub-badge">Published Journal Article</span>
+        <h3 class="pub-title">Drop impact on thin powder layers: Pattern formation by air entrapment</h3>
+        <p class="pub-authors"><strong>M. Sharma</strong>, M. Gopu, J.E. George, S. Gupta, D. Mampallil</p>
+        <div class="pub-meta">
+          <span class="pub-journal">Soft Matter 16, 1342–1348</span>
+          <span>(Published 2020)</span>
+          <span>DOI: 10.1039/C9SM02181F</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1039/C9SM02181F" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            Publisher DOI Link
+          </a>
+          <button class="pub-link" onclick="copyCitation('@article{sharma2020drop,\n  title={Drop impact on thin powder layers: Pattern formation by air entrapment},\n  author={Sharma, M and Gopu, M and George, JE and Gupta, S and Mampallil, D},\n  journal={Soft Matter},\n  volume={16},\n  number={5},\n  pages={1342--1348},\n  year={2020},\n  publisher={Royal Society of Chemistry}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+      <!-- Pub 9: Coffee-ring effect Phys Rev E Published -->
+      <div class="pub-card" data-category="published">
+        <span class="pub-badge">Published Journal Article</span>
+        <h3 class="pub-title">Beyond the coffee-ring effect: Pattern formation by wetting and spreading of drops</h3>
+        <p class="pub-authors">D. Mampallil, <strong>M. Sharma</strong>, A. Sen, S. Sinha</p>
+        <div class="pub-meta">
+          <span class="pub-journal">Physical Review E (Phys. Rev. E) 98, 043107</span>
+          <span>(Published 2018)</span>
+          <span>DOI: 10.1103/PhysRevE.98.043107</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1103/PhysRevE.98.043107" target="_blank" class="pub-link">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            Publisher DOI Link
+          </a>
+          <button class="pub-link" onclick="copyCitation('@article{mampallil2018beyond,\n  title={Beyond the coffee-ring effect: Pattern formation by wetting and spreading of drops},\n  author={Mampallil, D. and Sharma, M. and Sen, A. and Sinha, S.},\n  journal={Physical Review E},\n  volume={98},\n  number={4},\n  pages={043107},\n  year={2018},\n  publisher={APS}\n}')">
+            <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            Copy BibTeX
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Meenakshi Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

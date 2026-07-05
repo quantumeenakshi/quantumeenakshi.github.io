@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="46" fill="#0f3d7c" stroke="#ffffff" stroke-width="2"/>
+  <text x="50" y="48" font-family="'Outfit', sans-serif" font-weight="800" font-size="18" fill="#ffffff" text-anchor="middle">CSIR</text>
+  <text x="50" y="64" font-family="'Outfit', sans-serif" font-weight="bold" font-size="12" fill="#ffd700" text-anchor="middle">NPL</text>
+</svg>

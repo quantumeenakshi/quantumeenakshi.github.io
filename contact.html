@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Meenakshi Sharma for research collaboration, job opportunities, or academic discussions in quantum materials.">
+  <title>Contact | Meenakshi Sharma</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Contact page specific hero styles */
+    .contact-hero {
+      text-align: center;
+      padding: 10rem 0 4rem 0;
+      background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .contact-hero h1 {
+      margin-bottom: 1rem;
+    }
+    .contact-container-block {
+      padding: 4rem 0 6rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html#home" class="logo">
+        Meenakshi<span>Sharma</span>
+      </a>
+      
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>Reach out to discuss research collaborations, industry roles, or scientific inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section Block -->
+  <div class="contact-container-block">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h2>Contact Info</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 1.1rem;">Whether you are hiring for industry R&D roles, seeking research collaborations, or simply want to discuss quantum materials and superconducting technologies, feel free to reach out via email or the form.</p>
+          
+          <div class="contact-info-block">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:Meenakshi.sharma@cpfs.mpg.de">Meenakshi.sharma@cpfs.mpg.de</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact-links" style="margin-top: 2.5rem;">
+            <a href="https://www.cpfs.mpg.de/person/132836/3417578" target="_blank" class="social-link" title="MPI Profile" aria-label="Max Planck Profile">
+              <svg style="width: 20px; height: 20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your message! This is a static site demo.');">
+          <div class="form-group-custom">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Dr. Jane Doe">
+          </div>
+          <div class="form-group-custom">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="jane.doe@example.com">
+          </div>
+          <div class="form-group-custom">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Collaboration / Job Opportunity">
+          </div>
+          <div class="form-group-custom">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; border-radius: 8px;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Meenakshi Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
