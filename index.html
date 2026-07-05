@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,12 +88,85 @@
         <p>My research focuses on uncovering novel quantum phenomena in low-dimensional superconductors, probing Berezinskii-Kosterlitz-Thouless (BKT) transitions, phase slips, and topological fluctuations. I utilize a comprehensive suite of methodologies: from design and device modeling to advanced nanofabrication and precision cryogenic transport measurements.</p>
         <p>Currently, as a Postdoctoral Researcher at the <strong>Max Planck Institute for Chemical Physics of Solids (MPI-CPFS)</strong>, I collaborate with Dr. Uri Vool's group to characterize superconducting resonators and optimize disordered NbN films for next-generation quantum circuits.</p>
       </div>
+  <!-- Experience Section -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <h2>Academic & Professional Experience</h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">An interactive view of my research positions and academic journey across Europe and India.</p>
+      </div>
 
+      <div class="we-section">
+        <!-- Current Role Hero -->
+        <div class="we-current">
+          <div class="we-current-logo">
+            <img src="assets/img/mpi.png" alt="Max Planck Institute CPFS logo">
+          </div>
+          <div class="we-current-body">
+            <div class="we-current-badge">● Current</div>
+            <p class="we-current-title">Characterizing Superconducting Resonators @ Max Planck Institute</p>
+            <p class="we-current-role">Postdoctoral Researcher &nbsp;·&nbsp; Apr 2024 – Present</p>
+            <p class="we-current-desc">Working in the Quantum Information for Quantum Materials group with Dr. Uri Vool. Conducting microwave characterization of superconducting resonators, assessing dissipation mechanisms, and optimizing high-kinetic-inductance NbN films for next-generation quantum technologies.</p>
+          </div>
+        </div>
 
+        <!-- Past Experience Label -->
+        <div class="we-past-label">Past Experience</div>
+
+        <!-- Logo Grid -->
+        <div class="we-logo-grid" id="we-logo-grid">
+          <!-- INRiM -->
+          <button class="we-logo-btn" id="we-btn-0" aria-label="INRiM Torino" onclick="weShowDetail(0, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/inrim.svg" alt="INRiM logo">
+            </div>
+            <span class="we-logo-name">INRiM Torino</span>
+            <span class="we-logo-year">2023</span>
+          </button>
+
+          <!-- IISER -->
+          <button class="we-logo-btn" id="we-btn-1" aria-label="IISER Tirupati" onclick="weShowDetail(1, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/iiser.svg" alt="IISER Tirupati logo">
+            </div>
+            <span class="we-logo-name">IISER Tirupati</span>
+            <span class="we-logo-year">2017 – 2019</span>
+          </button>
+
+          <!-- ISRO -->
+          <button class="we-logo-btn" id="we-btn-2" aria-label="ISRO Ahmedabad" onclick="weShowDetail(2, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/isro.svg" alt="ISRO logo">
+            </div>
+            <span class="we-logo-name">ISRO</span>
+            <span class="we-logo-year">2016 – 2017</span>
+          </button>
+
+          <!-- NPL -->
+          <button class="we-logo-btn" id="we-btn-3" aria-label="NPL New Delhi" onclick="weShowDetail(3, this)">
+            <div class="we-logo-circle">
+              <img src="assets/img/npl.svg" alt="NPL India logo">
+            </div>
+            <span class="we-logo-name">NPL New Delhi</span>
+            <span class="we-logo-year">2015</span>
+          </button>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="we-detail-panel" id="we-detail-panel">
+          <button class="we-detail-close" onclick="weCloseDetail()" aria-label="Close">✕</button>
+          <div class="we-detail-header">
+            <div class="we-detail-logo"><img id="we-d-logo" src="" alt=""></div>
+            <div>
+              <p class="we-detail-company" id="we-d-company"></p>
+              <p class="we-detail-meta" id="we-d-meta"></p>
+            </div>
+          </div>
+          <p class="we-detail-desc" id="we-d-desc"></p>
+        </div>
+      </div>
     </div>
   </section>
-
-
 
   <!-- Footer -->
   <footer>
